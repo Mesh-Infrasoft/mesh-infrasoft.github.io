@@ -1,0 +1,21 @@
+baseURL = 'https://mesh-infrasoft.github.io/'
+languageCode = 'en-gb'
+defaultContentLanguage = "en"
+title = 'Mesh Infrasoft'
+theme = ["blank"]
+
+# recommended for GitHub pages
+publishDir = 'docs'
+
+# enable inline html rendering within Markdown posts
+[markup.goldmark.renderer] 
+unsafe = true 
+
+# ignore stupid error
+ignoreErrors = ["error-missing-instagram-accesstoken"]
+
+[params]
+  debug= "true"
+  
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
